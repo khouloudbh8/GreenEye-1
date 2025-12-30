@@ -7,14 +7,11 @@ class OnboardingScreen extends StatefulWidget {
     super.key,
     this.currentPage = 0,
   });
-
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
-
 class _OnboardingScreenState extends State<OnboardingScreen> {
   String _currentTime = '';
-
   @override
   void initState() {
     super.initState();
@@ -25,14 +22,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       }
     });
   }
-
   void _updateTime() {
     final now = DateTime.now();
     setState(() {
       _currentTime = '${now.hour.toString().padLeft(2, '0')}:${now.minute.toString().padLeft(2, '0')}';
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,19 +49,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           borderRadius: BorderRadius.circular(50),
           child: Stack(
             children: [
-              // Background Image - AJUSTÉ POUR COMMENCER À 0
               Positioned(
                 left: -75,
-                top: 0, // ✅ Changé de 38 à 0
+                top: 0, //
                 child: Image.asset(
                   'asset/fond.png',
                   width: 549,
-                  height: 844, // ✅ Ajusté pour couvrir toute la hauteur
+                  height: 844,
                   fit: BoxFit.cover,
                 ),
               ),
-
-              // STATUS BAR AVEC HEURE EN TEMPS RÉEL
               Positioned(
                 left: 0,
                 top: 0,
@@ -84,7 +76,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Heure en temps réel
                       Text(
                         _currentTime,
                         style: const TextStyle(
@@ -94,8 +85,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           color: Color(0xFF3F3F3F),
                         ),
                       ),
-
-                      // Icônes
                       Row(
                         children: const [
                           Icon(
@@ -133,8 +122,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   fit: BoxFit.contain,
                 ),
               ),
-
-              // Page Indicators
               Positioned(
                 left: 0,
                 right: 0,

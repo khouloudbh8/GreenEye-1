@@ -62,8 +62,6 @@ class _SecondPageState extends State<SecondPage> {
                   fit: BoxFit.cover,
                 ),
               ),
-
-              // Overlay sombre pour améliorer la lisibilité
               Positioned.fill(
                 child: Container(
                   decoration: BoxDecoration(
@@ -78,8 +76,6 @@ class _SecondPageState extends State<SecondPage> {
                   ),
                 ),
               ),
-
-              // Status Bar EN BLANC AU-DESSUS
               Positioned(
                 left: 0,
                 top: 0,
@@ -97,7 +93,6 @@ class _SecondPageState extends State<SecondPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Heure EN BLANC
                       Text(
                         _currentTime,
                         style: const TextStyle(
@@ -107,8 +102,6 @@ class _SecondPageState extends State<SecondPage> {
                           color: Colors.white,
                         ),
                       ),
-
-                      // Icônes EN BLANC
                       Row(
                         children: const [
                           Icon(
@@ -134,11 +127,9 @@ class _SecondPageState extends State<SecondPage> {
                   ),
                 ),
               ),
-
-              // Texte "Smart plant disease" DÉCALÉ VERS LE HAUT
               Positioned(
                 left: 40,
-                top: 200, // ✅ Décalé vers le haut (était 300)
+                top: 200,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
@@ -183,13 +174,11 @@ class _SecondPageState extends State<SecondPage> {
                 bottom: 50,
                 child: Column(
                   children: [
-                    // Bouton "Create an account"
                     SizedBox(
                       width: double.infinity,
                       height: 56,
                       child: ElevatedButton(
                         onPressed: () {
-                          // Action pour créer un compte
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.white,
@@ -211,14 +200,11 @@ class _SecondPageState extends State<SecondPage> {
                     ),
 
                     const SizedBox(height: 16),
-
-                    // Bouton "sign in"
                     SizedBox(
                       width: double.infinity,
                       height: 56,
                       child: OutlinedButton(
                         onPressed: () {
-                          // Action pour se connecter
                         },
                         style: OutlinedButton.styleFrom(
                           foregroundColor: Colors.white,
