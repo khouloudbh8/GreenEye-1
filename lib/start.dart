@@ -166,8 +166,6 @@ class _SecondPageState extends State<SecondPage> {
                   ],
                 ),
               ),
-
-              // Boutons en bas
               Positioned(
                 left: 20,
                 right: 20,
