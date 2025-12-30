@@ -120,3 +120,51 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+//pourtester first page
+//import 'package:flutter/material.dart';
+//import 'first.dart';
+
+//void main() {
+//  runApp(const MyApp());
+//}
+
+//class MyApp extends StatelessWidget {
+//const MyApp({super.key});
+
+//@override
+// Widget build(BuildContext context) {
+// return MaterialApp(
+//   title: 'Mon App',
+//   debugShowCheckedModeBanner: false,
+// theme: ThemeData(
+//     colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+//    useMaterial3: true,
+//  ),
+//  home: const OnboardingScreen(currentPage: 0),
+//);
+// }
+//}
+//pourtester page start
+//import 'package:flutter/material.dart';
+// import 'start.dart'; // Utilisez le fichier qui existe
+//
+// void main() {
+//   runApp(const MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Mon App',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+//         useMaterial3: true,
+//       ),
+//       home: const SecondPage(),
+//     );
+//   }
+// }
